@@ -1,0 +1,23 @@
+-- Secure admin user seeds with bcrypt hashed passwords
+--
+-- INSTRUCTIONS:
+-- 1. Use the password hashing script to generate bcrypt hashes
+-- 2. NEVER insert plaintext passwords
+-- 3. Replace the placeholder hash with actual bcrypt output
+--
+-- Example hash (password "admin123"):
+-- $2b$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcg7b3XeKeUxWdeS86.NGdS2Hem
+--
+-- To generate a bcrypt hash, run this Node.js snippet:
+-- node -e "const bcrypt = require('bcryptjs'); bcrypt.hash('your-password-here', 10).then(h => console.log(h))"
+--
+-- Or use the CLI:
+-- node -e "const {hashPassword} = require('./src/lib/utils/password'); hashPassword('your-password-here').then(h => console.log(h))"
+
+-- Create default admin account
+-- IMPORTANT: Replace the hash below with an actual bcrypt hash of your admin password
+-- INSERT INTO admins (username, password, created_at) VALUES
+-- ('admin', '$2b$10$REPLACE_WITH_ACTUAL_BCRYPT_HASH', NOW());
+
+-- For development/testing only - DO NOT USE IN PRODUCTION
+-- To seed, uncomment the line above and replace the hash

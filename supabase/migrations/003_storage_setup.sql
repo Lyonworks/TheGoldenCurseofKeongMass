@@ -1,0 +1,25 @@
+-- Storage bucket configuration (informational)
+-- These must be created via Supabase dashboard or CLI:
+--
+-- 1. Create bucket: news-images
+--    - Public access: Yes (for serving images)
+--
+-- 2. Create bucket: merchandise-images
+--    - Public access: Yes (for serving images)
+--
+-- 3. Create bucket: about-images
+--    - Public access: Yes (for serving images)
+--
+-- Storage RLS policies:
+--
+-- For each bucket, create policies:
+-- - Allow public read: anyone can download
+-- - Allow authenticated insert: only admin can upload (in practice, verified via JWT)
+-- - Allow authenticated delete: only admin can delete (in practice, verified via JWT)
+--
+-- Use Supabase CLI:
+-- supabase storage create news-images
+-- supabase storage create merchandise-images
+-- supabase storage create about-images
+--
+-- Or use dashboard: Storage > New bucket
