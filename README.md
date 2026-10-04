@@ -233,10 +233,6 @@ equivalent admin credential UI.
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
-
-# Optional
-NEXT_PUBLIC_WHATSAPP_PHONE=6285731590848
-NEXT_PUBLIC_ITCH_IO_URL=https://ikmalionn.itch.io/the-golden-curse-of-keong-mas
 ```
 
 ### Storage Bucket Names
